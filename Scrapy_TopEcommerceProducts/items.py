@@ -8,7 +8,9 @@
 import scrapy
 
 
-class ScrapyTopecommerceproductsItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class ProductItem(scrapy.Item):
+    title = scrapy.Field()
+    image = scrapy.Field()
+    department = scrapy.Field()
+    rank = scrapy.Field()
+    link = scrapy.Field()
